@@ -15,6 +15,8 @@ public class cat{
 			while(fileScanner.hasNextLine()){
 				System.out.println(fileScanner.nextLine());
 			}
+			input.close();
+			fileScanner.close();
 		}catch (IOException ex){
 			System.out.println("Something went wrong: " + ex.getMessage());
 		}
